@@ -1,0 +1,399 @@
+	
+	$(document).ready(function(){
+		block_modal();
+	})
+
+	$("#tipe_0").click(function(){
+		if( $("#tipe_0")[0].checked ){
+			mostrar_modal("#modal_trabajo_actual", "show");
+		}else{
+			mostrar_modal("#modal_trabajo_actual", "hide");
+		}
+	})
+
+		$("#tipe_1").click(function(){
+			pintar_trabajo( "" );
+				radio_false();
+					$("input[name=tipo_id]").removeAttr("value");
+					$("input[name=id_radio_instituto_select]").removeAttr("value");
+
+		})
+
+			$("#tip_pos_1").click(function(){
+
+				if( $("#tip_pos_1")[0].checked ){
+					mostrar_modal("#modal_posgrado", "show");
+				}else{
+					mostrar_modal("#modal_posgrado", "hide");
+				}
+
+			})
+
+				$("#actualizar_info_docente").click(function(){
+					$("#registro_usuario input[name=tipe]").val(3);
+					consultar_data_docente();
+					mostrar_modal("#info_docente", "show");
+				})
+
+					$("#btn_iniciar_act").click(function(){
+						var form = $("#docentes").serialize();
+				 		mandar_datos( form, "../", "docentes_registro", "docentes_registro.php", 12);
+					})
+
+			// $("#tip_pos_0").click(function(){
+			// 	var txt = "Ninguna de las anteriores";
+			// 		cambiar_txt(txt, "#res_pos");
+			// 			$("input[name=pos_grado]").val( txt );
+			// })
+
+					$("input[name=tipo_pos]").click(function(){
+						// cambiar_txt(this.value, "#res_pos");
+							$("input[name=pos_grado_txt]").val( this.value );
+					})
+
+						$("#tip_pos_0").click(function(){
+							$("input[name=pos_grado_txt]").val( "" );
+								radio_false();
+
+								//---------------------------------
+								$("input[name=id_posgrado_radio]").removeAttr("value");
+
+						})
+
+
+		var final_trabajo = "";
+
+    	$("input[name=tipo]").click(function(){
+		// cambiar_txt(this.value, "#res");
+			// $("input[name=trabajo_actual]").val( this.value );
+			final_trabajo = this.value;
+				pintar_trabajo( final_trabajo );
+		})
+
+			$("input[name=esc_tra]").click(function(){
+				if(this.checked){
+					// $("input[name=trabajo_actual]").val( this.value );
+					final_trabajo += ", de nivel académico, "+this.value;
+						pintar_trabajo( final_trabajo );
+				}
+			})
+
+				function pintar_trabajo( val ){
+					$("input[name=trabajo_actual_conf]").val( val );
+				}
+			
+
+					$("#tipo_trabajo_h").click(function(){
+						mostrar_modal("#modal_instituto", "show");
+							mostrar_modal("#modal_trabajo_actual", "hide");
+					})
+
+
+		$("#sueldo_actual_d").click(function(){
+			desmarcar_chekbox( "#sect_sueldo_actual", "#sueldo_actual_d" );
+		})
+
+			$("#sect_medio_empleo_padre input[type=text]").click(function(){
+				desmarcar_chekbox( "#sect_medio_empleo_padre", "#sect_medio_empleo_padre input[type=text]" );
+			})	
+
+				$("#idioma_padre_tra input[type=text]").click(function(){
+					desmarcar_chekbox( "#idioma_padre_tra", "#idioma_padre_tra input[type=text]" );
+				})
+
+					$("#registro_usuario .close").click(function(){
+						limpiar_campos();
+					})
+
+					function desmarcar_chekbox( id_element,  id_element_clear){
+
+						var long = $(id_element+" input[type=radio]");
+
+						for(var i = 0; i < long.length; i++){
+							if( long[i].checked ){
+								long[i].checked = false;
+							}
+						}
+
+							$(id_element+" input[type=radio]").click(function(){
+								$(id_element_clear).val("")
+							})	
+
+					}
+
+						function radio_false(){
+
+							var id_padre_radio = [
+													"#modal_trabajo_actual", 
+													"#modal_instituto",
+													"#modal_posgrado"
+												],
+								radio;
+
+							for(var x = 0;  x < id_padre_radio.length; x++){
+								for(var y = 0; y < $(id_padre_radio[x]+" input[type=radio]").length; y++){
+
+									radio = $(id_padre_radio[x]+" input[type=radio]")[y];
+
+									if( radio.checked ){
+										radio.checked = false;
+									}
+								}
+							}
+						}
+
+			function mostrar_modal(id, tipe){
+				$(id).modal(tipe);
+			}
+
+				function cambiar_txt(txt, id){
+					$(id)[0].innerHTML = txt;
+
+				}
+
+
+		$("#btn_aceptar").click(function(){
+
+			 // varificar_idioma();
+			 // mandar_datos();
+
+			 validar_checked_box();
+			 otro_idioma_validar();
+				 var form = $("#encuesta_egresados").serialize();
+			 		mandar_datos( form, "../", "registro_cuestionario", "registrar.php", 2);
+
+		})
+
+
+			function varificar_idioma(){
+
+				var 
+				porcentaje_dom = $("input[id=porcentaje_dom]"), 
+				idioma = $("input[id=idioma]"),
+				index = 0,
+				tipe = true,
+				equal_checked = 0, dif_checked = 0;
+
+				for(var x = 0; x < porcentaje_dom.length; x++){
+
+					if( porcentaje_dom[x].value && ( idioma[index].checked || idioma[index].value ) ){
+						equal_checked++;
+					}else{
+
+						if( porcentaje_dom[x].value == "" && ( idioma[index].checked )){
+							dif_checked++;
+						}else{
+							if( porcentaje_dom[x].value && ( !idioma[index].checked ) ){
+								dif_checked++;
+							}
+						}
+
+						console.log(" Posicion: "+index);
+
+					}
+
+					index++;
+
+				}
+
+					if( dif_checked > 0 ){
+						tipe = false;
+					}
+
+				console.log( tipe );
+				
+			}
+
+
+			//get id_input 
+			$("input").on({
+
+				  click: function() {				  	
+				   		get_id_input( this );
+				   		// console.log("click");
+				  }, change: function(){
+				   		get_id_input( this );
+				   		// console.log("change");
+				  }, keypress:function(){
+				   		get_id_input( this );
+				   		// console.log("keypress");
+				  }
+
+			});
+
+			$("textarea").on({
+
+				 click: function() {				  	
+				   		get_id_input( this );
+				   		// console.log("click");
+				  }, change: function(){
+				   		get_id_input( this );
+				   		// console.log("change");
+				  }, keypress:function(){
+				   		get_id_input( this );
+				   		// console.log("keypress");
+				  }
+
+			});	
+
+				//Obtener, definir y almacenar ID del input seleccionado en el new input...
+				function get_id_input( this_m ){
+
+					var id_select = $(this_m)[0].id;
+						var elemento = $("#"+id_select);
+							var id_extra_mom = elemento.parent()[0].id;
+								var id_extra_mom_sub = elemento.parent().parent()[0].id;
+									var padre_idiomas = elemento.parent().parent().parent()[0].id;
+						if( 
+
+							id_extra_mom != "sexo_madre"                &&
+							id_extra_mom != "titulado_madre"            &&
+							id_extra_mom != "sueldo_checked"            && 
+							id_extra_mom != "tam_emp"                   &&
+							id_extra_mom != "tipo_contrato_madre"       &&
+							id_extra_mom != "sect_medio_empleo_madre"   &&
+							id_extra_mom != "calidad_doc_madre"         &&
+							id_extra_mom != "plan_es_madre"             &&
+							id_extra_mom != "opot_proy_madre"           &&
+							id_extra_mom != "investigacion_ense_madre"  &&
+							id_extra_mom != "cond_es_madre"             &&
+							id_extra_mom != "exp_res_madre"             &&
+							id_extra_mom != "efi_acti_madre"            &&
+							id_extra_mom != "form_acad_madre"           &&
+							id_extra_mom != "utl_rprof_madre" 		    &&
+							id_extra_mom != "tipo_pos_madre" 			&&
+							id_extra_mom != "posgrado_tipe_madre"		&&
+							id_extra_mom != "tipo_trabajo_madre"		&&
+							id_extra_mom != "instituto_madre"			&&
+							id_extra_mom != "trabajando_madre"			&&
+							id_extra_mom != "act_actual_madre"			&&
+							id_extra_mom != "tiempo_enc_trabajo_madre"  &&
+							id_extra_mom != "idioma_madre_traba"        &&
+							id_extra_mom != "antigueda_empleo_madre"	&&
+							id_extra_mom != "periodo_madre"				&&
+							id_extra_mom != "puesto_trabajo_madre"
+
+						){
+
+							if( $("#"+id_select)[0].type != "checkbox" ){
+								$("."+id_select).val( id_select );
+							}
+
+						}else{
+
+							if( $("#"+id_select)[0].type != "checkbox" ){
+
+								var id_extra_father = $("#"+id_extra_mom).parent()[0].id;
+
+									$("#"+id_extra_father+" input[type=hidden]").val( id_select );
+
+								var do_not = $("#"+id_extra_father+" input[type=hidden]")[0].name;
+
+								if( do_not == "id_input_pos"){
+									$("input[name=id_input_pos]").val( "posgrado_a" );
+								}else{
+									if( do_not == "trabajo_actual_conf_id"){
+										$("input[name=trabajo_actual_conf_id]").val( "trabajo_actual_conf" );
+									}
+								}
+
+									console.log( id_extra_father, do_not );
+
+							}
+
+						}
+
+
+				}
+
+				$("input[type=checkbox]").click(function(){
+					var id_check = $(this)[0];
+					verificar_checkbox_checked( id_check );
+				})
+
+					function verificar_checkbox_checked( id_check ){
+
+						var identificador = id_check.id;
+							var input_checkbox_class = $("."+identificador);
+								var id_madre = $("#"+identificador).parent()[0].id;
+
+						if( id_check.checked ){
+							input_checkbox_class.val(id_check.id);
+							console.log("marcado");
+						}else{
+							input_checkbox_class.removeAttr("value");
+								$("#"+id_madre+" input[type=text]")[0].value = "";
+								$("#"+id_madre+" input[type=hidden]").removeAttr("value");
+
+							console.log("desmarcado");
+						}
+
+						// console.log( id_check );
+
+					}
+
+						function validar_checked_box(){
+
+							var input_txt = $("#padre_idiomas input[type=text]");
+							var input_checkbox = $("#padre_idiomas input[type=checkbox]");
+
+							for(var x = 0; x < input_checkbox.length; x++){
+
+								var input = $("#"+input_txt[x].id)[0],
+									checkbox = $("#"+input_checkbox[x].id)[0];
+
+								if( input.value != "" && checkbox.checked ){
+									console.log("Bien!!");
+								}else{
+
+									var id_padre_check = input_checkbox.parent()[x].id;
+
+									$("#"+id_padre_check+" input[type=text]").removeAttr("value").val("");
+									$("#"+id_padre_check+" input[type=hidden]").removeAttr("value");
+									$("#"+id_padre_check+" input[type=checkbox]")[0].checked = false;
+
+									// console.log( madre_input_txt, madre_input_hidden, madre_input_radio );
+										//console.log("Mal!!");
+								}
+
+								//console.log( input_txt );
+
+							}	
+
+						}
+
+							function otro_idioma_validar(){
+								
+								var input_txt    = $("#idioma_d_madre input[type=text]");
+								var input_hidden = $("#idioma_d_madre input[type=hidden]");
+
+								var ctn = 0;
+
+									for(var x = 0; x < input_txt.length; x++){
+										if( !input_txt[x].value ){
+											ctn++;
+										}
+									}
+
+								if( ctn > 0 ){
+									for(var x = 0; x < input_hidden.length; x++){
+										$("."+input_hidden[x].className).removeAttr("value");
+									}
+								}
+
+							}
+
+
+						function block_modal(){
+
+							var id_modal = [
+							  				"#registro_usuario",
+							  				"#verificacion",
+							  				"#info_docente"
+							  				];
+
+			  				for(var x = 0; x < id_modal.length; x++){
+			  					$(id_modal[x]).modal({backdrop: 'static', keyboard: false, show:false});
+			  				}
+
+						}

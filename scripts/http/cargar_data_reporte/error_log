@@ -1,0 +1,88 @@
+[02-Oct-2019 21:27:51 America/Mexico_City] PHP Fatal error:  Uncaught PDOException: SQLSTATE[28000] [1045] Access denied for user 'root'@'localhost' (using password: NO) in /home3/soport32/public_html/seguimiento_egresados/scripts/PDO/bd/conexion.php:17
+Stack trace:
+#0 /home3/soport32/public_html/seguimiento_egresados/scripts/PDO/bd/conexion.php(17): PDO->__construct('mysql:host=loca...', 'root', '')
+#1 /home3/soport32/public_html/seguimiento_egresados/scripts/http/cargar_data_reporte/data_reporte.php(18): conexion->bd()
+#2 /home3/soport32/public_html/seguimiento_egresados/scripts/http/cargar_data_reporte/data_reporte.php(46): data_reporte->__construct()
+#3 {main}
+  thrown in /home3/soport32/public_html/seguimiento_egresados/scripts/PDO/bd/conexion.php on line 17
+[06-Oct-2019 16:25:03 America/Mexico_City] PHP Fatal error:  Uncaught PDOException: SQLSTATE[28000] [1045] Access denied for user 'root'@'localhost' (using password: NO) in /home3/soport32/public_html/seguimiento_egresados/scripts/PDO/bd/conexion.php:17
+Stack trace:
+#0 /home3/soport32/public_html/seguimiento_egresados/scripts/PDO/bd/conexion.php(17): PDO->__construct('mysql:host=loca...', 'root', '')
+#1 /home3/soport32/public_html/seguimiento_egresados/scripts/http/cargar_data_reporte/data_reporte.php(18): conexion->bd()
+#2 /home3/soport32/public_html/seguimiento_egresados/scripts/http/cargar_data_reporte/data_reporte.php(46): data_reporte->__construct()
+#3 {main}
+  thrown in /home3/soport32/public_html/seguimiento_egresados/scripts/PDO/bd/conexion.php on line 17
+[06-Oct-2019 16:25:21 America/Mexico_City] PHP Fatal error:  Uncaught PDOException: SQLSTATE[28000] [1045] Access denied for user 'root'@'localhost' (using password: NO) in /home3/soport32/public_html/seguimiento_egresados/scripts/PDO/bd/conexion.php:17
+Stack trace:
+#0 /home3/soport32/public_html/seguimiento_egresados/scripts/PDO/bd/conexion.php(17): PDO->__construct('mysql:host=loca...', 'root', '')
+#1 /home3/soport32/public_html/seguimiento_egresados/scripts/http/cargar_data_reporte/data_reporte.php(18): conexion->bd()
+#2 /home3/soport32/public_html/seguimiento_egresados/scripts/http/cargar_data_reporte/data_reporte.php(46): data_reporte->__construct()
+#3 {main}
+  thrown in /home3/soport32/public_html/seguimiento_egresados/scripts/PDO/bd/conexion.php on line 17
+[06-Oct-2019 16:27:26 America/Mexico_City] PHP Fatal error:  Uncaught PDOException: SQLSTATE[28000] [1045] Access denied for user 'root'@'localhost' (using password: NO) in /home3/soport32/public_html/seguimiento_egresados/scripts/PDO/bd/conexion.php:17
+Stack trace:
+#0 /home3/soport32/public_html/seguimiento_egresados/scripts/PDO/bd/conexion.php(17): PDO->__construct('mysql:host=loca...', 'root', '')
+#1 /home3/soport32/public_html/seguimiento_egresados/scripts/http/cargar_data_reporte/data_reporte.php(18): conexion->bd()
+#2 /home3/soport32/public_html/seguimiento_egresados/scripts/http/cargar_data_reporte/data_reporte.php(46): data_reporte->__construct()
+#3 {main}
+  thrown in /home3/soport32/public_html/seguimiento_egresados/scripts/PDO/bd/conexion.php on line 17
+[30-Oct-2019 08:11:58 America/Mexico_City] PHP Warning:  array_unique() expects parameter 1 to be array, null given in /home3/soport32/public_html/seguimiento_egresados/scripts/http/cargar_data_reporte/data_reporte.php on line 31
+[30-Oct-2019 08:11:58 America/Mexico_City] PHP Warning:  Invalid argument supplied for foreach() in /home3/soport32/public_html/seguimiento_egresados/scripts/http/cargar_data_reporte/data_reporte.php on line 33
+[30-Oct-2019 08:12:12 America/Mexico_City] PHP Warning:  array_unique() expects parameter 1 to be array, null given in /home3/soport32/public_html/seguimiento_egresados/scripts/http/cargar_data_reporte/data_reporte.php on line 31
+[30-Oct-2019 08:12:12 America/Mexico_City] PHP Warning:  Invalid argument supplied for foreach() in /home3/soport32/public_html/seguimiento_egresados/scripts/http/cargar_data_reporte/data_reporte.php on line 33
+[30-Oct-2019 08:12:19 America/Mexico_City] PHP Warning:  array_unique() expects parameter 1 to be array, null given in /home3/soport32/public_html/seguimiento_egresados/scripts/http/cargar_data_reporte/data_reporte.php on line 31
+[30-Oct-2019 08:12:19 America/Mexico_City] PHP Warning:  Invalid argument supplied for foreach() in /home3/soport32/public_html/seguimiento_egresados/scripts/http/cargar_data_reporte/data_reporte.php on line 33
+[30-Oct-2019 08:15:22 America/Mexico_City] PHP Warning:  array_unique() expects parameter 1 to be array, null given in /home3/soport32/public_html/seguimiento_egresados/scripts/http/cargar_data_reporte/data_reporte.php on line 31
+[30-Oct-2019 08:15:22 America/Mexico_City] PHP Warning:  Invalid argument supplied for foreach() in /home3/soport32/public_html/seguimiento_egresados/scripts/http/cargar_data_reporte/data_reporte.php on line 33
+[30-Oct-2019 08:46:34 America/Mexico_City] PHP Warning:  array_unique() expects parameter 1 to be array, null given in /home3/soport32/public_html/seguimiento_egresados/scripts/http/cargar_data_reporte/data_reporte.php on line 31
+[30-Oct-2019 08:46:34 America/Mexico_City] PHP Warning:  Invalid argument supplied for foreach() in /home3/soport32/public_html/seguimiento_egresados/scripts/http/cargar_data_reporte/data_reporte.php on line 33
+[30-Oct-2019 09:42:30 America/Mexico_City] PHP Warning:  array_unique() expects parameter 1 to be array, null given in /home3/soport32/public_html/seguimiento_egresados/scripts/http/cargar_data_reporte/data_reporte.php on line 31
+[30-Oct-2019 09:42:30 America/Mexico_City] PHP Warning:  Invalid argument supplied for foreach() in /home3/soport32/public_html/seguimiento_egresados/scripts/http/cargar_data_reporte/data_reporte.php on line 33
+[30-Oct-2019 09:42:54 America/Mexico_City] PHP Warning:  array_unique() expects parameter 1 to be array, null given in /home3/soport32/public_html/seguimiento_egresados/scripts/http/cargar_data_reporte/data_reporte.php on line 31
+[30-Oct-2019 09:42:54 America/Mexico_City] PHP Warning:  Invalid argument supplied for foreach() in /home3/soport32/public_html/seguimiento_egresados/scripts/http/cargar_data_reporte/data_reporte.php on line 33
+[30-Oct-2019 09:44:20 America/Mexico_City] PHP Warning:  array_unique() expects parameter 1 to be array, null given in /home3/soport32/public_html/seguimiento_egresados/scripts/http/cargar_data_reporte/data_reporte.php on line 31
+[30-Oct-2019 09:44:20 America/Mexico_City] PHP Warning:  Invalid argument supplied for foreach() in /home3/soport32/public_html/seguimiento_egresados/scripts/http/cargar_data_reporte/data_reporte.php on line 33
+[30-Oct-2019 09:45:38 America/Mexico_City] PHP Warning:  array_unique() expects parameter 1 to be array, null given in /home3/soport32/public_html/seguimiento_egresados/scripts/http/cargar_data_reporte/data_reporte.php on line 31
+[30-Oct-2019 09:45:38 America/Mexico_City] PHP Warning:  Invalid argument supplied for foreach() in /home3/soport32/public_html/seguimiento_egresados/scripts/http/cargar_data_reporte/data_reporte.php on line 33
+[30-Oct-2019 09:48:08 America/Mexico_City] PHP Warning:  array_unique() expects parameter 1 to be array, null given in /home3/soport32/public_html/seguimiento_egresados/scripts/http/cargar_data_reporte/data_reporte.php on line 31
+[30-Oct-2019 09:48:08 America/Mexico_City] PHP Warning:  Invalid argument supplied for foreach() in /home3/soport32/public_html/seguimiento_egresados/scripts/http/cargar_data_reporte/data_reporte.php on line 33
+[30-Oct-2019 09:48:39 America/Mexico_City] PHP Warning:  array_unique() expects parameter 1 to be array, null given in /home3/soport32/public_html/seguimiento_egresados/scripts/http/cargar_data_reporte/data_reporte.php on line 31
+[30-Oct-2019 09:48:39 America/Mexico_City] PHP Warning:  Invalid argument supplied for foreach() in /home3/soport32/public_html/seguimiento_egresados/scripts/http/cargar_data_reporte/data_reporte.php on line 33
+[30-Oct-2019 09:49:43 America/Mexico_City] PHP Warning:  array_unique() expects parameter 1 to be array, null given in /home3/soport32/public_html/seguimiento_egresados/scripts/http/cargar_data_reporte/data_reporte.php on line 31
+[30-Oct-2019 09:49:43 America/Mexico_City] PHP Warning:  Invalid argument supplied for foreach() in /home3/soport32/public_html/seguimiento_egresados/scripts/http/cargar_data_reporte/data_reporte.php on line 33
+[30-Oct-2019 09:58:23 America/Mexico_City] PHP Warning:  array_unique() expects parameter 1 to be array, null given in /home3/soport32/public_html/seguimiento_egresados/scripts/http/cargar_data_reporte/data_reporte.php on line 31
+[30-Oct-2019 09:58:23 America/Mexico_City] PHP Warning:  Invalid argument supplied for foreach() in /home3/soport32/public_html/seguimiento_egresados/scripts/http/cargar_data_reporte/data_reporte.php on line 33
+[30-Oct-2019 10:10:26 America/Mexico_City] PHP Warning:  array_unique() expects parameter 1 to be array, null given in /home3/soport32/public_html/seguimiento_egresados/scripts/http/cargar_data_reporte/data_reporte.php on line 31
+[30-Oct-2019 10:10:26 America/Mexico_City] PHP Warning:  Invalid argument supplied for foreach() in /home3/soport32/public_html/seguimiento_egresados/scripts/http/cargar_data_reporte/data_reporte.php on line 33
+[30-Oct-2019 10:21:30 America/Mexico_City] PHP Warning:  array_unique() expects parameter 1 to be array, null given in /home3/soport32/public_html/seguimiento_egresados/scripts/http/cargar_data_reporte/data_reporte.php on line 31
+[30-Oct-2019 10:21:30 America/Mexico_City] PHP Warning:  Invalid argument supplied for foreach() in /home3/soport32/public_html/seguimiento_egresados/scripts/http/cargar_data_reporte/data_reporte.php on line 33
+[30-Oct-2019 10:21:40 America/Mexico_City] PHP Warning:  array_unique() expects parameter 1 to be array, null given in /home3/soport32/public_html/seguimiento_egresados/scripts/http/cargar_data_reporte/data_reporte.php on line 31
+[30-Oct-2019 10:21:40 America/Mexico_City] PHP Warning:  Invalid argument supplied for foreach() in /home3/soport32/public_html/seguimiento_egresados/scripts/http/cargar_data_reporte/data_reporte.php on line 33
+[30-Oct-2019 10:25:42 America/Mexico_City] PHP Warning:  array_unique() expects parameter 1 to be array, null given in /home3/soport32/public_html/seguimiento_egresados/scripts/http/cargar_data_reporte/data_reporte.php on line 31
+[30-Oct-2019 10:25:42 America/Mexico_City] PHP Warning:  Invalid argument supplied for foreach() in /home3/soport32/public_html/seguimiento_egresados/scripts/http/cargar_data_reporte/data_reporte.php on line 33
+[30-Oct-2019 10:25:58 America/Mexico_City] PHP Warning:  array_unique() expects parameter 1 to be array, null given in /home3/soport32/public_html/seguimiento_egresados/scripts/http/cargar_data_reporte/data_reporte.php on line 31
+[30-Oct-2019 10:25:58 America/Mexico_City] PHP Warning:  Invalid argument supplied for foreach() in /home3/soport32/public_html/seguimiento_egresados/scripts/http/cargar_data_reporte/data_reporte.php on line 33
+[30-Oct-2019 10:27:46 America/Mexico_City] PHP Warning:  array_unique() expects parameter 1 to be array, null given in /home3/soport32/public_html/seguimiento_egresados/scripts/http/cargar_data_reporte/data_reporte.php on line 31
+[30-Oct-2019 10:27:46 America/Mexico_City] PHP Warning:  Invalid argument supplied for foreach() in /home3/soport32/public_html/seguimiento_egresados/scripts/http/cargar_data_reporte/data_reporte.php on line 33
+[30-Oct-2019 12:57:49 America/Mexico_City] PHP Warning:  array_unique() expects parameter 1 to be array, null given in /home3/soport32/public_html/seguimiento_egresados/scripts/http/cargar_data_reporte/data_reporte.php on line 31
+[30-Oct-2019 12:57:49 America/Mexico_City] PHP Warning:  Invalid argument supplied for foreach() in /home3/soport32/public_html/seguimiento_egresados/scripts/http/cargar_data_reporte/data_reporte.php on line 33
+[30-Oct-2019 13:06:51 America/Mexico_City] PHP Warning:  array_unique() expects parameter 1 to be array, null given in /home3/soport32/public_html/seguimiento_egresados/scripts/http/cargar_data_reporte/data_reporte.php on line 31
+[30-Oct-2019 13:06:51 America/Mexico_City] PHP Warning:  Invalid argument supplied for foreach() in /home3/soport32/public_html/seguimiento_egresados/scripts/http/cargar_data_reporte/data_reporte.php on line 33
+[30-Oct-2019 21:57:44 America/Mexico_City] PHP Warning:  array_unique() expects parameter 1 to be array, null given in /home3/soport32/public_html/seguimiento_egresados/scripts/http/cargar_data_reporte/data_reporte.php on line 31
+[30-Oct-2019 21:57:44 America/Mexico_City] PHP Warning:  Invalid argument supplied for foreach() in /home3/soport32/public_html/seguimiento_egresados/scripts/http/cargar_data_reporte/data_reporte.php on line 33
+[30-Oct-2019 21:58:06 America/Mexico_City] PHP Warning:  array_unique() expects parameter 1 to be array, null given in /home3/soport32/public_html/seguimiento_egresados/scripts/http/cargar_data_reporte/data_reporte.php on line 31
+[30-Oct-2019 21:58:06 America/Mexico_City] PHP Warning:  Invalid argument supplied for foreach() in /home3/soport32/public_html/seguimiento_egresados/scripts/http/cargar_data_reporte/data_reporte.php on line 33
+[30-Oct-2019 21:59:29 America/Mexico_City] PHP Warning:  array_unique() expects parameter 1 to be array, null given in /home3/soport32/public_html/seguimiento_egresados/scripts/http/cargar_data_reporte/data_reporte.php on line 31
+[30-Oct-2019 21:59:29 America/Mexico_City] PHP Warning:  Invalid argument supplied for foreach() in /home3/soport32/public_html/seguimiento_egresados/scripts/http/cargar_data_reporte/data_reporte.php on line 33
+[30-Oct-2019 21:59:32 America/Mexico_City] PHP Warning:  array_unique() expects parameter 1 to be array, null given in /home3/soport32/public_html/seguimiento_egresados/scripts/http/cargar_data_reporte/data_reporte.php on line 31
+[30-Oct-2019 21:59:32 America/Mexico_City] PHP Warning:  Invalid argument supplied for foreach() in /home3/soport32/public_html/seguimiento_egresados/scripts/http/cargar_data_reporte/data_reporte.php on line 33
+[30-Oct-2019 21:59:34 America/Mexico_City] PHP Warning:  array_unique() expects parameter 1 to be array, null given in /home3/soport32/public_html/seguimiento_egresados/scripts/http/cargar_data_reporte/data_reporte.php on line 31
+[30-Oct-2019 21:59:34 America/Mexico_City] PHP Warning:  Invalid argument supplied for foreach() in /home3/soport32/public_html/seguimiento_egresados/scripts/http/cargar_data_reporte/data_reporte.php on line 33
+[30-Oct-2019 21:59:38 America/Mexico_City] PHP Warning:  array_unique() expects parameter 1 to be array, null given in /home3/soport32/public_html/seguimiento_egresados/scripts/http/cargar_data_reporte/data_reporte.php on line 31
+[30-Oct-2019 21:59:38 America/Mexico_City] PHP Warning:  Invalid argument supplied for foreach() in /home3/soport32/public_html/seguimiento_egresados/scripts/http/cargar_data_reporte/data_reporte.php on line 33
+[30-Oct-2019 21:59:40 America/Mexico_City] PHP Warning:  array_unique() expects parameter 1 to be array, null given in /home3/soport32/public_html/seguimiento_egresados/scripts/http/cargar_data_reporte/data_reporte.php on line 31
+[30-Oct-2019 21:59:40 America/Mexico_City] PHP Warning:  Invalid argument supplied for foreach() in /home3/soport32/public_html/seguimiento_egresados/scripts/http/cargar_data_reporte/data_reporte.php on line 33
+[30-Oct-2019 21:59:46 America/Mexico_City] PHP Warning:  array_unique() expects parameter 1 to be array, null given in /home3/soport32/public_html/seguimiento_egresados/scripts/http/cargar_data_reporte/data_reporte.php on line 31
+[30-Oct-2019 21:59:46 America/Mexico_City] PHP Warning:  Invalid argument supplied for foreach() in /home3/soport32/public_html/seguimiento_egresados/scripts/http/cargar_data_reporte/data_reporte.php on line 33
+[30-Oct-2019 21:59:56 America/Mexico_City] PHP Warning:  array_unique() expects parameter 1 to be array, null given in /home3/soport32/public_html/seguimiento_egresados/scripts/http/cargar_data_reporte/data_reporte.php on line 31
+[30-Oct-2019 21:59:56 America/Mexico_City] PHP Warning:  Invalid argument supplied for foreach() in /home3/soport32/public_html/seguimiento_egresados/scripts/http/cargar_data_reporte/data_reporte.php on line 33

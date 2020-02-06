@@ -1,0 +1,110 @@
+[17-Sep-2019 16:19:35 America/Mexico_City] PHP Warning:  Module 'imagick' already loaded in Unknown on line 0
+[17-Sep-2019 16:19:35 America/Mexico_City] PHP Warning:  Module 'SourceGuardian' already loaded in Unknown on line 0
+[17-Sep-2019 16:19:35 America/Mexico_City] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [2005] Unknown MySQL server host 'mx50.hostgator.mx
+' (0)' in /home3/soport32/public_html/seguimiento_egresados/scripts/PDO/bd/conexion.php:18
+Stack trace:
+#0 /home3/soport32/public_html/seguimiento_egresados/scripts/PDO/bd/conexion.php(18): PDO->__construct('mysql:host=mx50...', 'soport32_egresa...', '6pXNF@lS%n1,')
+#1 /home3/soport32/public_html/seguimiento_egresados/scripts/http/login/login.php(16): conexion->bd()
+#2 /home3/soport32/public_html/seguimiento_egresados/scripts/http/login/login.php(77): login->__construct()
+#3 {main}
+  thrown in /home3/soport32/public_html/seguimiento_egresados/scripts/PDO/bd/conexion.php on line 18
+[17-Sep-2019 16:21:40 America/Mexico_City] PHP Warning:  Module 'imagick' already loaded in Unknown on line 0
+[17-Sep-2019 16:21:40 America/Mexico_City] PHP Warning:  Module 'SourceGuardian' already loaded in Unknown on line 0
+[17-Sep-2019 16:21:40 America/Mexico_City] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [2005] Unknown MySQL server host 'mx50.hostgator.mx
+' (0)' in /home3/soport32/public_html/seguimiento_egresados/scripts/PDO/bd/conexion.php:18
+Stack trace:
+#0 /home3/soport32/public_html/seguimiento_egresados/scripts/PDO/bd/conexion.php(18): PDO->__construct('mysql:host=mx50...', 'soport32_egresa...', '6pXNF@lS%n1,')
+#1 /home3/soport32/public_html/seguimiento_egresados/scripts/http/login/login.php(16): conexion->bd()
+#2 /home3/soport32/public_html/seguimiento_egresados/scripts/http/login/login.php(77): login->__construct()
+#3 {main}
+  thrown in /home3/soport32/public_html/seguimiento_egresados/scripts/PDO/bd/conexion.php on line 18
+[17-Sep-2019 16:21:49 America/Mexico_City] PHP Warning:  Module 'imagick' already loaded in Unknown on line 0
+[17-Sep-2019 16:21:49 America/Mexico_City] PHP Warning:  Module 'SourceGuardian' already loaded in Unknown on line 0
+[17-Sep-2019 16:21:50 America/Mexico_City] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [2005] Unknown MySQL server host 'mx50.hostgator.mx
+' (0)' in /home3/soport32/public_html/seguimiento_egresados/scripts/PDO/bd/conexion.php:18
+Stack trace:
+#0 /home3/soport32/public_html/seguimiento_egresados/scripts/PDO/bd/conexion.php(18): PDO->__construct('mysql:host=mx50...', 'soport32_egresa...', '6pXNF@lS%n1,')
+#1 /home3/soport32/public_html/seguimiento_egresados/scripts/http/login/login.php(16): conexion->bd()
+#2 /home3/soport32/public_html/seguimiento_egresados/scripts/http/login/login.php(77): login->__construct()
+#3 {main}
+  thrown in /home3/soport32/public_html/seguimiento_egresados/scripts/PDO/bd/conexion.php on line 18
+[17-Sep-2019 16:23:28 America/Mexico_City] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [2005] Unknown MySQL server host 'mx50.hostgator.mx
+' (0) in /home3/soport32/public_html/seguimiento_egresados/scripts/PDO/bd/conexion.php:18
+Stack trace:
+#0 /home3/soport32/public_html/seguimiento_egresados/scripts/PDO/bd/conexion.php(18): PDO->__construct('mysql:host=mx50...', 'soport32_egresa...', '6pXNF@lS%n1,')
+#1 /home3/soport32/public_html/seguimiento_egresados/scripts/http/login/login.php(16): conexion->bd()
+#2 /home3/soport32/public_html/seguimiento_egresados/scripts/http/login/login.php(77): login->__construct()
+#3 {main}
+  thrown in /home3/soport32/public_html/seguimiento_egresados/scripts/PDO/bd/conexion.php on line 18
+[17-Sep-2019 16:24:06 America/Mexico_City] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [2005] Unknown MySQL server host 'mx50.hostgator.mx
+' (0) in /home3/soport32/public_html/seguimiento_egresados/scripts/PDO/bd/conexion.php:18
+Stack trace:
+#0 /home3/soport32/public_html/seguimiento_egresados/scripts/PDO/bd/conexion.php(18): PDO->__construct('mysql:host=mx50...', 'soport32_egresa...', '6pXNF@lS%n1,')
+#1 /home3/soport32/public_html/seguimiento_egresados/scripts/http/login/login.php(16): conexion->bd()
+#2 /home3/soport32/public_html/seguimiento_egresados/scripts/http/login/login.php(77): login->__construct()
+#3 {main}
+  thrown in /home3/soport32/public_html/seguimiento_egresados/scripts/PDO/bd/conexion.php on line 18
+[17-Sep-2019 16:24:14 America/Mexico_City] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [2005] Unknown MySQL server host 'mx50.hostgator.mx
+' (0) in /home3/soport32/public_html/seguimiento_egresados/scripts/PDO/bd/conexion.php:18
+Stack trace:
+#0 /home3/soport32/public_html/seguimiento_egresados/scripts/PDO/bd/conexion.php(18): PDO->__construct('mysql:host=mx50...', 'soport32_egresa...', '6pXNF@lS%n1,')
+#1 /home3/soport32/public_html/seguimiento_egresados/scripts/http/login/login.php(16): conexion->bd()
+#2 /home3/soport32/public_html/seguimiento_egresados/scripts/http/login/login.php(77): login->__construct()
+#3 {main}
+  thrown in /home3/soport32/public_html/seguimiento_egresados/scripts/PDO/bd/conexion.php on line 18
+[02-Oct-2019 21:18:40 America/Mexico_City] PHP Fatal error:  Uncaught PDOException: SQLSTATE[28000] [1045] Access denied for user 'root'@'localhost' (using password: NO) in /home3/soport32/public_html/seguimiento_egresados/scripts/PDO/bd/conexion.php:17
+Stack trace:
+#0 /home3/soport32/public_html/seguimiento_egresados/scripts/PDO/bd/conexion.php(17): PDO->__construct('mysql:host=loca...', 'root', '')
+#1 /home3/soport32/public_html/seguimiento_egresados/scripts/http/login/login.php(16): conexion->bd()
+#2 /home3/soport32/public_html/seguimiento_egresados/scripts/http/login/login.php(77): login->__construct()
+#3 {main}
+  thrown in /home3/soport32/public_html/seguimiento_egresados/scripts/PDO/bd/conexion.php on line 17
+[02-Oct-2019 21:27:45 America/Mexico_City] PHP Fatal error:  Uncaught PDOException: SQLSTATE[28000] [1045] Access denied for user 'root'@'localhost' (using password: NO) in /home3/soport32/public_html/seguimiento_egresados/scripts/PDO/bd/conexion.php:17
+Stack trace:
+#0 /home3/soport32/public_html/seguimiento_egresados/scripts/PDO/bd/conexion.php(17): PDO->__construct('mysql:host=loca...', 'root', '')
+#1 /home3/soport32/public_html/seguimiento_egresados/scripts/http/login/login.php(16): conexion->bd()
+#2 /home3/soport32/public_html/seguimiento_egresados/scripts/http/login/login.php(77): login->__construct()
+#3 {main}
+  thrown in /home3/soport32/public_html/seguimiento_egresados/scripts/PDO/bd/conexion.php on line 17
+[02-Oct-2019 21:27:59 America/Mexico_City] PHP Fatal error:  Uncaught PDOException: SQLSTATE[28000] [1045] Access denied for user 'root'@'localhost' (using password: NO) in /home3/soport32/public_html/seguimiento_egresados/scripts/PDO/bd/conexion.php:17
+Stack trace:
+#0 /home3/soport32/public_html/seguimiento_egresados/scripts/PDO/bd/conexion.php(17): PDO->__construct('mysql:host=loca...', 'root', '')
+#1 /home3/soport32/public_html/seguimiento_egresados/scripts/http/login/login.php(16): conexion->bd()
+#2 /home3/soport32/public_html/seguimiento_egresados/scripts/http/login/login.php(77): login->__construct()
+#3 {main}
+  thrown in /home3/soport32/public_html/seguimiento_egresados/scripts/PDO/bd/conexion.php on line 17
+[06-Oct-2019 16:25:02 America/Mexico_City] PHP Fatal error:  Uncaught PDOException: SQLSTATE[28000] [1045] Access denied for user 'root'@'localhost' (using password: NO) in /home3/soport32/public_html/seguimiento_egresados/scripts/PDO/bd/conexion.php:17
+Stack trace:
+#0 /home3/soport32/public_html/seguimiento_egresados/scripts/PDO/bd/conexion.php(17): PDO->__construct('mysql:host=loca...', 'root', '')
+#1 /home3/soport32/public_html/seguimiento_egresados/scripts/http/login/login.php(17): conexion->bd()
+#2 /home3/soport32/public_html/seguimiento_egresados/scripts/http/login/login.php(121): login->__construct()
+#3 {main}
+  thrown in /home3/soport32/public_html/seguimiento_egresados/scripts/PDO/bd/conexion.php on line 17
+[06-Oct-2019 16:25:05 America/Mexico_City] PHP Fatal error:  Uncaught PDOException: SQLSTATE[28000] [1045] Access denied for user 'root'@'localhost' (using password: NO) in /home3/soport32/public_html/seguimiento_egresados/scripts/PDO/bd/conexion.php:17
+Stack trace:
+#0 /home3/soport32/public_html/seguimiento_egresados/scripts/PDO/bd/conexion.php(17): PDO->__construct('mysql:host=loca...', 'root', '')
+#1 /home3/soport32/public_html/seguimiento_egresados/scripts/http/login/login.php(17): conexion->bd()
+#2 /home3/soport32/public_html/seguimiento_egresados/scripts/http/login/login.php(121): login->__construct()
+#3 {main}
+  thrown in /home3/soport32/public_html/seguimiento_egresados/scripts/PDO/bd/conexion.php on line 17
+[06-Oct-2019 16:25:21 America/Mexico_City] PHP Fatal error:  Uncaught PDOException: SQLSTATE[28000] [1045] Access denied for user 'root'@'localhost' (using password: NO) in /home3/soport32/public_html/seguimiento_egresados/scripts/PDO/bd/conexion.php:17
+Stack trace:
+#0 /home3/soport32/public_html/seguimiento_egresados/scripts/PDO/bd/conexion.php(17): PDO->__construct('mysql:host=loca...', 'root', '')
+#1 /home3/soport32/public_html/seguimiento_egresados/scripts/http/login/login.php(17): conexion->bd()
+#2 /home3/soport32/public_html/seguimiento_egresados/scripts/http/login/login.php(121): login->__construct()
+#3 {main}
+  thrown in /home3/soport32/public_html/seguimiento_egresados/scripts/PDO/bd/conexion.php on line 17
+[06-Oct-2019 16:27:26 America/Mexico_City] PHP Fatal error:  Uncaught PDOException: SQLSTATE[28000] [1045] Access denied for user 'root'@'localhost' (using password: NO) in /home3/soport32/public_html/seguimiento_egresados/scripts/PDO/bd/conexion.php:17
+Stack trace:
+#0 /home3/soport32/public_html/seguimiento_egresados/scripts/PDO/bd/conexion.php(17): PDO->__construct('mysql:host=loca...', 'root', '')
+#1 /home3/soport32/public_html/seguimiento_egresados/scripts/http/login/login.php(17): conexion->bd()
+#2 /home3/soport32/public_html/seguimiento_egresados/scripts/http/login/login.php(121): login->__construct()
+#3 {main}
+  thrown in /home3/soport32/public_html/seguimiento_egresados/scripts/PDO/bd/conexion.php on line 17
+[06-Oct-2019 16:27:29 America/Mexico_City] PHP Fatal error:  Uncaught PDOException: SQLSTATE[28000] [1045] Access denied for user 'root'@'localhost' (using password: NO) in /home3/soport32/public_html/seguimiento_egresados/scripts/PDO/bd/conexion.php:17
+Stack trace:
+#0 /home3/soport32/public_html/seguimiento_egresados/scripts/PDO/bd/conexion.php(17): PDO->__construct('mysql:host=loca...', 'root', '')
+#1 /home3/soport32/public_html/seguimiento_egresados/scripts/http/login/login.php(17): conexion->bd()
+#2 /home3/soport32/public_html/seguimiento_egresados/scripts/http/login/login.php(121): login->__construct()
+#3 {main}
+  thrown in /home3/soport32/public_html/seguimiento_egresados/scripts/PDO/bd/conexion.php on line 17

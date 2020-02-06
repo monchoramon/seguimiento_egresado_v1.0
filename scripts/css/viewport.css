@@ -1,0 +1,81 @@
+
+@media(max-width: 360px){
+	#title_a > h3{
+		font-size: 16px;
+		padding: 10px;
+		text-align: center;
+	}
+}
+
+@media (max-width: 575.98px) {
+
+
+	header{
+		height: 100px;
+		background-size: 200%!important;
+	}
+
+	#container{
+		top: 130px;
+	}
+
+		#acc_doc{
+			display: none;
+		}
+
+	/*Panel docente*/
+
+	#contenido{
+		width: 100%!important;
+	}
+
+		#cont_tabla{
+			overflow: scroll;
+		}
+
+			#menu{
+				 display: none; 
+			}
+
+				.menu{
+					display: block!important;
+					min-width: 85%!important;
+					z-index: 2!important;
+				}
+
+		#usuario{
+			float: left!important;
+		}
+
+	div.dataTables_wrapper div.dataTables_paginate ul.pagination{
+		justify-content: initial!important;
+	}
+
+	#form_container input[type="text"], 
+	#form_container input[type="email"]{
+		width: 100%!important;
+	}
+
+	.container_pre{
+		width: 90%!important;
+	}
+
+	#title_a > #btn > button{
+		width: 50px;
+    	height: 50px;
+    	margin: 10px 5px;
+	}
+
+	#title_a > #btn > button > div{
+		width: 100%!important;
+		height: 3px;
+		background: #000;
+		margin-top: 9px;
+	}
+
+	#main_div{
+		margin: 0px!important;
+	}
+	
+
+}

@@ -1,0 +1,233 @@
+
+body{
+	margin: 0px;
+}
+
+li{
+	list-style: none;
+}
+
+header{
+	display: flex!important;
+	width: 100%;
+	height: 175px;
+	/*background: #3F6352;*/
+	background-image: url(../../recursos/imagenes/logotec.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	justify-content: center;
+	align-items: flex-start;
+	color: #193A67;
+
+}
+
+#title_a{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	background: #3F6352;
+	color: #FFF;
+}
+
+/*header > h2{
+
+}
+*/
+#main{
+	display: flex;
+}
+
+#main > div{
+	flex: 1;
+}
+
+#menu{
+	width: 25%!important;
+	height: 100%!important;
+	position: absolute;
+	background: #3F6352;
+	color: #FFF;
+}
+
+#menu
+h6{
+	padding: 10px;
+	text-align: center;
+	border-color: #7A1E1E;
+	border-bottom-style: solid;
+}
+
+#menu > ul li{
+	width: 100%;
+	cursor: pointer;
+	padding: 5px;
+}
+
+#menu > ul li:hover{
+	background-color: #7A1E1E;
+}
+
+#usuario{
+	display: flex;
+	background: #7A1E1E;
+	float: right;
+	color: #FFF;
+	padding: 10px;
+}
+
+.bie{
+	margin-right: 5px;
+	font-weight: bold;
+}
+
+#contenido{
+	width: 75%!important;
+	min-height: 100%!important;
+	right: 0px!important;
+	position: absolute;
+}
+
+#cont_tabla{
+	/*position: absolute!important;
+	bottom: 0px!important;*/
+	margin-top: 50px;
+	padding: 20px;
+}
+
+#cont_tabla > h4{
+	padding: 10px;
+}
+
+#tabla_egresados{
+	min-width: 100%!important;
+}
+
+
+/************Formulario******************/
+
+#encuesta_egresados{
+	width: 100%;
+	margin: 0px auto;
+	/*padding: 15px;*/
+}
+
+.container_pre > div > label{
+	font-weight: bold;
+}
+
+input[type="text"], input[type="email"], input[type="password"]{
+	width: 450px;
+}
+
+#perfiles{
+
+	background: #7A1E1E;
+	color: #FFF;
+	padding: 5px;
+	text-align: center;
+	margin-bottom: 25px;
+
+   /* transform: skew(0, -1.5deg);
+    transform-origin: bottom right;*/
+
+}
+
+#sugerencia{
+	height: 120px;
+	resize: none;
+}
+
+.container{
+	min-width: 100%!important;
+	height: 100%!important;
+	display: flex!important;
+	justify-content: center;
+	align-items: center!important;
+
+	padding: 0px!important;
+}
+
+/*Login*/
+
+#container{
+	position: absolute;
+	height: 450px!important;
+	color: #FFF;
+	top: 200px;
+}
+
+#acc_doc{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#acc_doc, #log{
+	height: 80%;
+	position: relative;
+	background: #7A1E1E;
+	padding: 10px;
+	float: right!important;
+}
+
+#log{
+	width: 300px!important;
+	display: flex;
+	align-items: center;
+	background: #3F6352;
+}
+
+#log > form{
+	width: 100%!important;
+}
+
+#log > form > div > input{
+	width: 100%!important;
+	overflow: hidden!important;
+}
+
+#btn_acceder{
+	width: 100%;
+	margin: 0px auto!important;
+	background: #7A1E1E;
+	border-color: #7A1E1E;
+}
+
+
+/*Formulario campo actualizado*/
+
+.container_pre{
+	width: 50%;
+	margin: 0px auto;
+	justify-content: center;
+}
+
+#btn_aceptar{
+	margin-bottom: 20px!important;
+}
+
+
+#encuesta_egresados > #perfiles{
+	margin-top: 10px;
+}
+
+#encuesta_egresados > nav{
+	background-color: #3F6352!important;
+}
+
+/*new*/
+
+#info{
+	display: none;
+	padding: 10px;
+	margin: 10px 0px;
+}
+
+#docentes .alert-danger{
+	display: none;
+	margin: 10px 0px;
+}
+
+#padre_ubicacion_laboral > div > label{
+	font-weight: bold;
+}

@@ -1,0 +1,87 @@
+{radio o checkbox o input} en linea:
+
+1. Número de control *** 
+2. Nombre completo ***
+3. Sexo ***
+4. Telefono ***
+5. Email ***
+6. Año de egreso ***
+7. ¿Estás titulado? ***
+8. ¿Cuál es tu puesto de trabajo? ***
+9. Salario actual ***
+10. ¿Cuál es el tipo de contrato que tienes con la empresa? ***
+11. ¿Cuál es el idioma que utilizas en la empresa? ***
+12. ¿Cuál es la antigüedad que tienes en la empresa? ***
+13. ¿De qué tamaño es la empresa donde laboras? ***
+14. ¿Cuál fue el tiempo transcurrido para obtener tu primer empleo?
+15. ¿Cuál fue el medio usado para obtener tu primer empleo? ***
+16. ¿Cómo consideras la calidad de los docentes del ITLAC? ***
+17. ¿Cómo consideras el plan de estudios del ITLAC? ***
+18. ¿Cómo son las oportunidades de participar en proyectos de investigación y desarrollo? ***
+19. Énfasis que se le prestaba a la investigación dentro del proceso de enseñanza ***
+20. ¿Cuál fue su satisfacción con las condiciones de estudio (infraestructura)? ***
+21. ¿Cómo fue tu experiencia obtenida a través de la residencia profesional? ***
+22. ¿Cómo es su eficiencia para realizar las actividades laborales en relación con su formación académica? ***
+23. ¿Cómo califica su formación académica con respecto a su desempeño laboral? ***
+24. Utilidad de las residencias profesionales o prácticas profesionales para su desarrollo laboral y profesional ***
+25. ¿Tienes alguna sugerencia o comentario para mejorar la calidad de enseñanza en el ITLAC? ***
+
+--------------------------
+
+radio, (checkbox o radio) y input:
+
+1. ¿Tienes posgrado? ***
+2. 
+3. 
+4.
+5.
+6.
+
+--------------------------
+
+radio o checkbox y 2 input:
+
+1. ¿Estás trabajando? ***
+2. 
+3. 
+4.
+5. 
+6. 
+
+---------------------------
+
+1. ¿Qué lenguaje extranjero dominas?
+
+
+----------------------------------------------------------------------------
+
+numero_control
+nombre_completo
+sexo
+telefono
+email
+ano_egreso
+titulo
+puestro_traba
+sueldo_act
+tipo_contrato
+idioma_emp
+ant_emp
+tam_emp
+timp_emp
+medio_trabajo
+calidad_doc
+plan_es
+opot_proy
+investigacion
+cond_es
+exp_res
+efi_acti
+form_acad
+utl_rprof
+sugerencia
+
+
+----------
+
+tipo_contrato_madre
